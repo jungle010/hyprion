@@ -1,0 +1,253 @@
+@import "colourSheet.css";
+
+* {
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 16px;
+}
+
+tray {
+  background-color: @mantle
+}
+
+window#waybar {
+  background-color: transparent;
+  border-radius: 0px 0px 15px 15px;
+  transition-property: background-color;
+  transition-duration: .5s;
+}
+
+button {
+  box-shadow: inset 0 -3px transparent;
+  border: none;
+  border-radius: 0;
+}
+
+/* FUCK YOU WAYBAR https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect
+button:hover {
+  background: inherit;
+  box-shadow: inset 0 -3px #ffffff;
+}
+*/
+
+/* you can set a style on hover for any module like this */
+
+#window:hover {
+  background-color: @surface2
+}
+
+#custom-media:hover {
+  background-color: @surface2
+}
+
+#pulseaudio:hover {
+  background-color: @surface2
+}
+
+#network:hover {
+  background-color: @surface2
+}
+
+#temperature:hover {
+  background-color: @surface2
+}
+
+#battery:hover {
+  background-color: @surface2
+}
+
+#clock:hover {
+  background-color: @surface2
+}
+
+#custom-notifications:hover {
+  background-color: @surface2
+}
+
+#tray:hover {
+  background-color: @surface2
+}
+
+/*
+#workspaces button,
+#workspaces button:hover,
+#workspaces button.focused,
+#workspaces button.urgent {
+  padding: 0 10px;
+  background-color: @mantle;
+  margin: 5px;
+  border-radius: 20px 20px 20px 20px;  
+}
+*/
+
+
+#workspaces button {
+  padding: 0px 10px;
+  background-color: @mantle;
+  margin: 5px;
+  border-radius: 3px;
+  color: #ffffff; 
+}
+
+#workspaces button:hover {
+  border-radius: 3px;
+  background: @surface2
+}
+
+/*
+#workspaces button:last-child {
+  border-radius: 20px 15px 15px 20px
+}
+*/
+
+#workspaces button.focused {
+  background-color: @lavender;
+  box-shadow: inset 0 -3px #ffffff;
+}
+
+#workspaces button.urgent {
+  background-color: #eb4d4b;
+}
+
+#mode {
+  background-color: #64727D;
+  box-shadow: inset 0 -3px #ffffff;
+}
+
+#tray,
+#custom-media,
+#custom-notifications,
+#clock,
+#battery,
+#cpu,
+#memory,
+#temperature,
+#network,
+#pulseaudio {
+  padding: 0 10px;
+  background-color: @mantle;
+  margin: 5px;
+  border-radius: 3px;
+}
+
+#pulseaudio {
+  color: @white;
+  border-radius: 3px
+}
+
+#network {
+  color: @white;
+}
+
+#temperature {
+  color: @white;
+}
+
+#battery {
+  color: @white;
+}
+
+#clock {
+  color: @white;
+}
+
+#custom-notifications {
+  background-color: @mantle;
+  border-radius: 3px;
+  color: @white;
+  padding-left: 13px;
+  padding-right: 15px
+}
+
+#window {
+  padding: 0 10px;
+  background-color: @mantle;
+  margin: 5px;
+  border-radius: 3px;
+  color: @white
+}
+
+/*
+.modules-right,
+.modules-left,
+.modules-center {
+  background-color: @base;
+  border-radius: 15px;
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-right: 20px
+}
+*/
+
+.modules-right {
+  background-color: @base;
+  border-radius: 6px;
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-right: 20px
+}
+
+.modules-left {
+  background-color: @base;
+  border-radius: 6px;
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-right: 20px
+}
+
+.modules-center {
+  background-color: @base;
+  border-radius: 6px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-right: 20px
+}
+
+#temperature.critical {
+  background-color: #f53c3c;
+  margin: 5px;
+  border-radius: 3px;
+  color: #ffffff;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: steps(12);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes blink {
+  to {
+    color: @mantle;
+  }
+}
+
+#battery.warning:not(.charging) {
+  background-color: #713a3a;
+}
+
+#battery.critical:not(.charging) {
+  background-color: #f53c3c;
+  color: #ffffff;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: steps(12);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+label:focus {
+  background-color: #000000;
+}
+
+#pulseaudio.muted {
+  color: @text;
+}
+
+#custom-media {
+  color: @textwhite;
+  padding: 0 10px;
+  background-color: @mantle;
+  margin: 5px;
+  border-radius: 3  
+}
