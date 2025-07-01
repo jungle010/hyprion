@@ -12,3 +12,4 @@ sudo pacman -S waybar hyprsunset hyprlock hyprpolkitagent swaync swaybg rofi kit
 
 ### ✧ installation
 Clone the repo, then copy over the folders your .config folder. 
+Note: copy the wallpapers folder to your downloads, and change the user from jungle to your user in hyprland.conf.
