@@ -10,4 +10,4 @@ sudo pacman -S waybar hyprsunset hyprlock hyprpolkitagent swaync swaybg rofi kit
 ```
 
 ### ✧ installation
-Clone the repo, then copy over the folders inside the config folder to your .config folder. 
+Clone the repo, then copy over the folders your .config folder. 
