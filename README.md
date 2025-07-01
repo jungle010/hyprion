@@ -4,6 +4,7 @@ Simple WIP dotfiles.
 
 ### ✧ requirements
 > waybar, hyprsunset, hyprlock, hyprpolkitagent, swaync, rofi, swaybg, kitty
+
 You can install these by running:
 ```
 sudo pacman -S waybar hyprsunset hyprlock hyprpolkitagent swaync swaybg rofi kitty
